@@ -199,7 +199,12 @@ const SearchPage = () => {
         </ul>
         <a class="nav-button" href="https://mirrulations.org" target="_blank">Log Out</a>
       </nav>
-      <h1 className="title">Mirrulation Explorer</h1>
+      <motion.h1 
+            className="title"
+            initial={{ opacity: 0 , y: -20}}
+      animate={{ opacity: 1, y:0 }}
+      transition={{ duration: 0.8 }}
+          >Mirrulation Explorer</motion.h1>
 
       <div className="search-wrapper">
         <div className="multiple-topics">
@@ -211,7 +216,12 @@ const SearchPage = () => {
         </div>
         <section className="search-section">
 
-          <div id="search" className="d-flex justify-content-center align-items-center">
+          <motion.div 
+initial={{ opacity: 0 , y: -20}}
+      animate={{ opacity: 1, y:0 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
+
+                id="search" className="d-flex justify-content-center align-items-center">
             <input
               type="text"
               className="search-input"
@@ -227,7 +237,7 @@ const SearchPage = () => {
               <MagnifyingGlassIcon size={32} />
             </button>
 
-          </div>
+          </motion.div>
         </section>
         <div className="advance-section">
                       <select
