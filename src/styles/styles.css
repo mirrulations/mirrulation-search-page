@@ -1,0 +1,230 @@
+
+/*Fran css*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Lato", sans-serif;
+
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+font-family: "Lato", sans-serif;
+width: 95%;
+
+}
+
+
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.nav-button {
+  padding: 0.6rem 1.2rem;
+  background: #6366f1;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+      transition:  all ease-in-out 0.5s;
+
+}
+
+.nav-button:hover {
+    scale: 1.07;
+}
+
+.form-select {
+  display: none;
+}
+
+.multiple-topics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 780px;
+  align-items: left;
+}
+
+
+
+.topic-button {
+  width: 100%;
+  color: #6366f1;
+  background: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* underline */
+.topic-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #6366f1;
+  transition: width 0.25s ease, left 0.25s ease;
+}
+
+/* hover */
+.topic-button:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.search-wrapper {
+  width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-----------s*/
+
+
+.search-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f6f7fb;
+  font-family: "Lato", sans-serif;
+
+}
+
+
+
+.search-section {
+  display: flex;
+  width: 60%;
+  min-width: 900px;
+}
+
+#search {
+  width: 80vw;
+}
+
+#loading-section {
+  color: #fff
+}
+
+.search-input {
+  width: 100px;
+  flex: 1;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+
+}
+
+.search-button {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.search-button:hover {
+  background-color: #1f4e87;
+}
+
+#error-loader {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.footer {
+  padding: 5px 10px;
+  background-color: #fff;
+  position: fixed; /* Change to fixed to ensure it stays at the bottom */
+  bottom: 0;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  border-radius: 5px;
+  text-align: center; /* Ensure text is centered inside the footer */
+  width: auto; /* Adjust width as needed */
+}
+
+a.disabled {
+  pointer-events: none;
+  color: #ccc;
+}
+
+.result-item {
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out;
+  min-height: 80px; /* Ensure enough height for content */
+  /* Removed position: relative to avoid styling issues */
+}
+
+.docket-icon {
+  /* No longer using absolute positioning */
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.docket-icon:hover {
+  transform: scale(1.2); /* Slight scale on hover for better user feedback */
+}
+
+/* Results container styling */
+.results-container {
+  position: absolute;
+  top: 800px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.results-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add styles for the flex layout of result items */
+.result-content {
+  flex: 1;
+}
