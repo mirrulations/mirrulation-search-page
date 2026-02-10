@@ -1,71 +1,24 @@
-
-/*Fran css*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*Fran css-------------------*/
 
 .title {
   text-align: center;
   margin-top: 50px;
   font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: #6366f1;
 
-}
-
-.navbar {
-  max-width: 1100px;
-  margin: 1.5rem auto;
-  padding: 1rem 1.5rem;
-  background: white;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-font-family: "Lato", sans-serif;
-width: 95%;
 
 }
 
 
-
-.logo {
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: black;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #374151;
-  font-weight: 500;
-}
-
-.nav-button {
-  padding: 0.6rem 1.2rem;
-  background: #6366f1;
-  color: white;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-      transition:  all ease-in-out 0.5s;
-
-}
-
-.nav-button:hover {
-    scale: 1.07;
-}
-
-.form-select {
-  display: none;
-}
 
 .multiple-topics {
   display: flex;
   justify-content: space-between;
-  max-width: 780px;
+  max-width: 785px;
+  width: 100%;
   align-items: left;
 }
 
@@ -107,7 +60,72 @@ width: 95%;
   transform: translate(-50%, -50%);
 }
 
-/*-----------s*/
+.advance-section  {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  width: 500px;
+  gap: 20px;
+}
+
+.advance-btn {
+    background-color: #6366f1;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    
+
+
+}
+
+/*Just navbar styling I did in the past---------*/
+
+
+.navbar {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  width: 95%;
+
+}
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: black;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+.nav-button {
+  padding: 0.6rem 1.2rem;
+  background: #6366f1;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all ease-in-out 0.5s;
+
+}
+.nav-button:hover {
+  scale: 1.07;
+}
+
+
+/*-----------*/
 
 
 .search-container {
@@ -128,6 +146,8 @@ width: 95%;
 
 #search {
   width: 80vw;
+  font-family: "Lato", sans-serif;
+
 }
 
 #loading-section {
@@ -162,20 +182,25 @@ width: 95%;
 }
 
 #error-loader {
-  color: #fff;
+  color: #000000;
   font-size: 1.2rem;
 }
 
 .footer {
   padding: 5px 10px;
   background-color: #fff;
-  position: fixed; /* Change to fixed to ensure it stays at the bottom */
+  position: fixed;
+  /* Change to fixed to ensure it stays at the bottom */
   bottom: 0;
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
+  left: 50%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  /* Adjust for centering */
   border-radius: 5px;
-  text-align: center; /* Ensure text is centered inside the footer */
-  width: auto; /* Adjust width as needed */
+  text-align: center;
+  /* Ensure text is centered inside the footer */
+  width: auto;
+  /* Adjust width as needed */
 }
 
 a.disabled {
@@ -187,7 +212,8 @@ a.disabled {
   background-color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease-in-out;
-  min-height: 80px; /* Ensure enough height for content */
+  min-height: 80px;
+  /* Ensure enough height for content */
   /* Removed position: relative to avoid styling issues */
 }
 
@@ -202,7 +228,8 @@ a.disabled {
 }
 
 .docket-icon:hover {
-  transform: scale(1.2); /* Slight scale on hover for better user feedback */
+  transform: scale(1.2);
+  /* Slight scale on hover for better user feedback */
 }
 
 /* Results container styling */
