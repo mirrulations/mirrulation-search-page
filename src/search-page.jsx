@@ -207,19 +207,22 @@ const SearchPage = () => {
           >Mirrulation Explorer</motion.h1>
 
       <div className="search-wrapper">
-        <div className="multiple-topics">
+        <motion.div 
+              className="multiple-topics"
+
+            initial={{ opacity: 0 , y: -20}}
+      animate={{ opacity: 1, y:0 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
+            >
           <button className="topic-button">Topic1</button>
           <button className="topic-button">Topic2</button>
           <button className="topic-button">Topic3</button>
           <button className="topic-button">Topic4</button>
           <button className="topic-button">Topic5</button>
-        </div>
+        </motion.div>
         <section className="search-section">
 
-          <motion.div 
-initial={{ opacity: 0 , y: -20}}
-      animate={{ opacity: 1, y:0 }}
-      transition={{ duration: 0.8, delay: 0.5 }}
+          <div 
 
                 id="search" className="d-flex justify-content-center align-items-center">
             <input
@@ -237,7 +240,7 @@ initial={{ opacity: 0 , y: -20}}
               <MagnifyingGlassIcon size={32} />
             </button>
 
-          </motion.div>
+          </div>
         </section>
         <div className="advance-section">
                       <select

@@ -83,8 +83,8 @@
 
 
 .navbar {
+  margin: 0 auto;
   max-width: 1100px;
-  margin: 1.5rem auto;
   padding: 1rem 1.5rem;
   background: white;
   border-radius: 10px;
@@ -133,6 +133,7 @@
   width: 100vw;
   background-color: #f6f7fb;
   font-family: "Lato", sans-serif;
+  margin-top: 0px
 
 }
 
